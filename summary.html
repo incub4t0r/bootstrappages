@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="en" data-bs-theme="dark"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<style>
+    :root {
+        --transition-time: 0.2s;
+        --bezier-curve: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: transform var(--transition-time) var(--bezier-curve), box-shadow var(--transition-time) var(--bezier-curve);
+    }
+
+    .card {
+        border-radius: none;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        border: none;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .bi {
+        text-decoration: none;
+        color: #404040;
+    }
+
+    .bi:hover {
+        color: #000000;
+    } */
+
+    .bounce-up-down {
+        animation: bounce-up-down 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes bounce-up-down {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* i *{
+        color: #FFFFFF;
+    } */
+</style>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<body>
+    <section id="section-one">
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">Centered hero</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                </div>
+            </div>
+            <!-- <div class="mt-5">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-2 bounce-up-down">
+                        <a class="bi bi-arrow-down-circle fs-1" href="#section-two"></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section id="section-two">
+        <div class="container mt-4 text-center">
+            <div class="row justify-content-md-center">
+                <div class="col-md-4 p-4">
+                    <i class="bi bi-info-circle fs-1"></i>
+                    <h3>
+                        Receive Insights
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                    </p>
+                </div>
+                <div class="col-md-4 p-4">
+                    <i class="bi bi-lock fs-1"></i>
+                    <h3>
+                        Test Websites
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-4 p-4">
+                    <i class="bi bi-shield-check fs-1"></i>              
+                    <h3>
+                        Protect Your Privacy
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque pariatur debitis illo dicta id, accusantium qui vel iusto quo officiis!
+                    </p>
+                </div>
+                <div class="col-md-4 p-4">
+                    <i class="bi bi-broadcast-pin fs-1"></i>
+                    <h3>
+                        Bad Websites
+                    </h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat voluptatum itaque, aut reprehenderit fuga nobis natus qui minima ea sequi.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- <div class="row justify-content-md-center row-gap-4">
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 p-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 2</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 2</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>col 1</h1>
+                            </div>
+                            this is a test
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    
+</body>
+</html>
