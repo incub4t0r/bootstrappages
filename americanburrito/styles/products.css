@@ -1,3 +1,7 @@
+:root {
+    --ab-blue: #00314C;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +34,7 @@ body {
 }
 
 .card:hover .card-body {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.3);
     /* box-shadow: 0 0 10px 0 rgba(26, 99, 255, 0.5); */
     /* target the image inside the card */
 }
@@ -64,4 +68,14 @@ body {
     .container-fluid {
         padding: 0 200px 0 200px;
     }
+}
+
+.btn-primary {
+    background-color: var(--ab-blue);
+    border-color: var(--ab-blue);
+}
+
+.card-title{
+    /* make bold */
+    font-weight: 600;
 }
